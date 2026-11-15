@@ -1,0 +1,31 @@
+:root{--bg:#faf8f3;--card:#fff;--ink:#1f1b14;--sub:#6f675a;--line:#e8e1d2;--gold:#a87b20;--gold2:#d4af37}
+@media (prefers-color-scheme:dark){:root{--bg:#141210;--card:#1e1b17;--ink:#f1ebdf;--sub:#a79f90;--line:#332e26;--gold:#e0bd63;--gold2:#d4af37}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,"Hiragino Sans","Yu Gothic",sans-serif;line-height:1.75}
+a{color:var(--gold)}
+header{border-bottom:1px solid var(--line);background:var(--card)}
+.wrap{max-width:760px;margin:0 auto;padding:0 16px}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:56px}
+.brand{font-weight:800;letter-spacing:.02em;color:var(--ink);text-decoration:none}
+.brand span{color:var(--gold)}
+nav a{margin-left:16px;font-size:14px;text-decoration:none;color:var(--sub)}
+main{padding:32px 0 56px}
+h1{font-size:28px;line-height:1.35;margin:0 0 8px}
+h2{font-size:20px;margin:36px 0 10px;padding-bottom:6px;border-bottom:2px solid var(--gold2)}
+.lead{color:var(--sub);margin:0 0 24px}
+.hero{display:flex;gap:20px;align-items:center;margin-bottom:12px}
+.hero img{width:96px;height:96px;border-radius:22px;box-shadow:0 4px 14px rgba(0,0,0,.18)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 20px;margin:14px 0}
+.app{display:flex;gap:16px;align-items:center;text-decoration:none;color:var(--ink)}
+.app img{width:64px;height:64px;border-radius:15px}
+.app b{display:block;font-size:18px}
+.app small{color:var(--sub)}
+ul{padding-left:1.3em}
+li{margin:4px 0}
+table{width:100%;border-collapse:collapse;margin:10px 0}
+th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;font-size:15px}
+th{background:var(--bg)}
+.note{font-size:13px;color:var(--sub)}
+.btn{display:inline-block;background:var(--gold);color:#fff;text-decoration:none;font-weight:700;padding:10px 18px;border-radius:999px}
+footer{border-top:1px solid var(--line);padding:20px 0;font-size:13px;color:var(--sub)}
+@media (max-width:480px){h1{font-size:23px}.hero{flex-direction:column;align-items:flex-start}nav a{margin-left:10px}}
